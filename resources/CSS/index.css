@@ -35,16 +35,117 @@ nav a {
     padding-right: 1.2rem;
 }
 
+@media screen and (max-width: 599px) {
+  nav a{
+    padding-left: 10px;
+  }
+
+  nav {
+    width: 60rem;
+    padding-bottom: 20px;
+  }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  nav a, .dropdown-content a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .links a {
+    padding-left: 1px;
+  }
+
+  nav {
+    height: 80px;
+    width: 100%;
+    background-color: #164249;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+
+}
+
+
+}
+
+
+/* Dropdown list Nav */
+
+
+.dropbtn {
+  background-color: #164249;
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #164249;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 19.2px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #164249;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+
+
 /* Header */
 
 header {
     background-color: #F1F3F8;
     padding-left: 12rem;
     padding-right: 12rem;
+    min-height: 400px;
 }
 
 header p {
-    /* align-items: center; */
     padding-bottom: 4rem;
 }
 
@@ -54,11 +155,25 @@ header h1 {
 }
 
 .piar {
-    /* width: 20%;
-    border-radius: 40%;
-    float: right; */
-    float: right;
+    float: left;
+    margin: 5px 25px 10px 0px;
+    border-radius: 20%;
+
 }
+
+@media screen and (max-width: 550px) {
+  header {
+    padding-left: 5rem;
+    width: 60rem;
+  }
+
+  header p {
+    width: 700px;
+  }
+
+}
+
+
 
 /* Projects */
 
@@ -103,6 +218,7 @@ header h1 {
     position: relative;
     background-color: inherit;
     width: 50%;
+
   }
   
   /* The circles on the timeline */
@@ -183,9 +299,14 @@ header h1 {
     
     /* Full-width containers */
     .container {
-    width: 100%;
+    width: 50%;
     padding-left: 70px;
     padding-right: 25px;
+
+    }
+
+    .projects {
+      width: 60rem;
     }
     
     /* Make sure that all arrows are pointing leftwards */
@@ -212,6 +333,8 @@ header h1 {
 .emblem {
 
     width: 3%;
+    min-width: 30px;
+
 }
 
 .skills h1 {
@@ -223,6 +346,23 @@ header h1 {
 }
 
 
+@media screen and (max-width: 600px) {
+  .emblem {
+    width: 50px;
+    display:inline-block;
+}
+
+  .skills {
+    padding: 1.2rem 5rem 1.2rem 12rem;
+  }
+
+  /* .skills .emblem {
+    padding-left: 5;
+  } */
+}
+
+
+
 /* Contact */
 
 .contact {
@@ -232,6 +372,16 @@ header h1 {
 .contact h1 {
     padding-bottom: 1.2rem;
 }
+
+.contact p {
+  vertical-align: middle;
+}
+
+.email {
+  float: inline-start;
+}
+
+
 
 
 /* footer */
